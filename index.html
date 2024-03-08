@@ -11,6 +11,12 @@
 			referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="./assets/css/base.css" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.1/css/all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
 		<title>Shopee Mall</title>
 	</head>
 	<body>
@@ -18,34 +24,206 @@
 		<div class="app">
 			<!-- header -->
 			<header class="header">
-				<nav class="header_navbar">
-					<ul class="header_navbar-list">
-						<li class="header_navbar-item">Trang chủ Shopee</li>
-						<li class="header_navbar-item">Trở thành Người bán Shopee</li>
-						<li class="header_navbar-item">
-							<a href="" class="header_navbar-item-link">Tải ứng dụng</a>
-						</li>
-						<li class="header_navbar-item">Kết nối</li>
-						<li class="header_navbar-item">icon facebook</li>
-						<li class="header_navbar-item">icon instagram</li>
-					</ul>
-					<ul class="header_navbar-list">
-						<li class="header_navbar-item">
-							<a href="" class="header_navbar-item-link">Thông Báo</a>
-						</li>
-						<li class="header_navbar-item">Hỗ Trợ</li>
-						<li class="header_navbar-item">
-							<a href="" class="header_navbar-item-link">Tiếng Việt</a>
-						</li>
-						<li class="header_navbar-item">Đăng Ký</li>
-						<li class="header_navbar-item">Đăng Nhập</li>
-					</ul>
-				</nav>
+				<div class="grid">
+					<nav class="header_navbar">
+						<ul class="header_navbar-list">
+							<li class="header_navbar-item header_navbar-item-separate">Trang chủ Shopee</li>
+							<li class="header_navbar-item header_navbar-item-separate">Trở thành Người bán Shopee</li>
+							<li class="header_navbar-item header_navbar-item-has-qr header_navbar-item-separate">
+								Tải ứng dụng
+								<!-- Header QR Code -->
+								<div class="header_qr">
+									<img src="./assets/img/qrcode.png" alt="QR Code" class="header_qr-img" />
+									<div class="header_qr-apps">
+										<a href="" class="header_qr-link">
+											<img src="./assets/img/appstore.png" alt="App Store" class="header_qr-download-img" />
+										</a>
+										<a href="" class="header_qr-link">
+											<img src="./assets/img/googleplay.png" alt="Google Play" class="header_qr-download-img" />
+										</a>
+										<a href="" class="header_qr-link">
+											<img src="./assets/img/appgallery.png" alt="App Gallery" class="header_qr-download-img" />
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="header_navbar-item">
+								<span class="header_navbar-title-no-pointer">Kết nối</span>
+								<a href="" class="header_navbar-icon-link">
+									<i class="header_navbar-icon fa-brands fa-facebook"></i>
+								</a>
+								<a href="" class="header_navbar-icon-link">
+									<i class="header_navbar-icon fa-brands fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
+						<ul class="header_navbar-list">
+							<li class="header_navbar-item header_navbar-item-has-notify header_navbar-item-separate">
+								<a href="" class="header_navbar-item-link">
+									<i class="header_navbar-icon fa-regular fa-bell"></i>
+									Thông Báo
+								</a>
+								<div class="header_notify">
+									<header class="header_notify-header">
+										<h3>Thông báo mới nhất</h3>
+									</header>
+									<ul class="header_notify-list">
+										<li class="header_notify-item header_notify-item-viewed">
+											<a href="" class="header_notify-link">
+												<span>
+													<img
+														src="https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-li6rug3v8kb6de"
+														alt=""
+														class="header_notify-img" />
+												</span>
+												<div class="header_notify-info">
+													<span class="header_notify-name">Mỹ phẩm CoolMate chính hãng</span>
+													<span class="header_notify-descriotion">Mô tả mỹ phẩm CoolMate chính hãng</span>
+												</div>
+											</a>
+										</li>
+										<li class="header_notify-item header_notify-item-viewed">
+											<a href="" class="header_notify-link">
+												<span>
+													<img
+														src="https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-li6rug3v8kb6de"
+														alt=""
+														class="header_notify-img" />
+												</span>
+												<div class="header_notify-info">
+													<span class="header_notify-name">Mỹ phẩm CoolMate chính hãng</span>
+													<span class="header_notify-descriotion">Mô tả mỹ phẩm CoolMate chính hãng</span>
+												</div>
+											</a>
+										</li>
+										<li class="header_notify-item header_notify-item-viewed">
+											<a href="" class="header_notify-link">
+												<span>
+													<img
+														src="https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-li6rug3v8kb6de"
+														alt=""
+														class="header_notify-img" />
+												</span>
+												<div class="header_notify-info">
+													<span class="header_notify-name">Mỹ phẩm CoolMate chính hãng</span>
+													<span class="header_notify-descriotion">Mô tả mỹ phẩm CoolMate chính hãng</span>
+												</div>
+											</a>
+										</li>
+										<li class="header_notify-item header_notify-item-viewed">
+											<a href="" class="header_notify-link">
+												<span>
+													<img
+														src="https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-li6rug3v8kb6de"
+														alt=""
+														class="header_notify-img" />
+												</span>
+												<div class="header_notify-info">
+													<span class="header_notify-name">Mỹ phẩm CoolMate chính hãng</span>
+													<span class="header_notify-descriotion">Mô tả mỹ phẩm CoolMate chính hãng</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<footer class="header_notify-footer">
+										<a href="" class="header_notify-footer-btn">Xem tất cả</a>
+									</footer>
+								</div>
+							</li>
+							<li class="header_navbar-item header_navbar-item-separate">
+								<i class="header_navbar-icon fa-regular fa-circle-question"></i>
+								Hỗ Trợ
+							</li>
+							<li class="header_navbar-item header_navbar-item-has-language header_navbar-item-separate">
+								<a href="" class="header_navbar-item-link">
+									<i class="header_navbar-icon fa-solid fa-globe"></i>
+									Tiếng Việt
+									<i class="header_navbar-icon fa-solid fa-angle-down"></i>
+								</a>
+								<div class="header_language">
+									<header class="header_language-header">
+										<h3>Ngôn ngữ</h3>
+									</header>
+									<ul class="header_language-list">
+										<li class="header_language-item header_language-item-viewed">
+											<a href="" class="header_language-link">
+												<div class="header_language-info">
+													<span class="header_language-name">Tiếng Việt</span>
+												</div>
+											</a>
+										</li>
+										<li class="header_language-item header_language-item-viewed">
+											<a href="" class="header_language-link">
+												<div class="header_language-info">
+													<span class="header_language-name">Tiếng Anh</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header_navbar-item header_navbar-item-strong header_navbar-item-separate">Đăng Ký</li>
+							<li class="header_navbar-item header_navbar-item-strong">Đăng Nhập</li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 			<!-- body -->
 			<div class="container"></div>
 			<!-- footer -->
 			<footer class="footer"></footer>
+		</div>
+
+		<!-- Modal layout -->
+		<div class="modal">
+			<div class="modal_overlay"></div>
+			<div class="modal_body">
+				<div class="modal_inner">
+					<!-- Authen form -->
+					<div class="auth-form">
+						<div class="auth-form_container">
+							<div class="auth-form_header">
+								<h3 class="auth-form_heading">Đăng ký</h3>
+								<span class="auth-form_switch-btn">Đăng nhập</span>
+							</div>
+							<div class="auth-form_form">
+								<div class="auth-form_group">
+									<input type="text" class="auth-form_input" placeholder="Email của bạn" />
+								</div>
+								<div class="auth-form_group">
+									<input type="password" class="auth-form_input" placeholder="Mật khẩu của bạn" />
+								</div>
+								<div class="auth-form_group">
+									<input type="password" class="auth-form_input" placeholder="Nhập lại mật khẩu của bạn" />
+								</div>
+							</div>
+							<div class="auth-form_aside">
+								<p class="auth-form_policy-text">
+									Bằng việc đăng ký, bạn đã đăng ký với Shopee về
+									<a href="" class="auth-form_text_link">Điều khoản dịch vụ</a>
+									&
+									<a href="" class="auth-form_text_link">Chính sách bảo mật</a>
+								</p>
+							</div>
+							<div class="auth-form_controls">
+								<button class="btn btn-normal auth-form_controls-back">TRỞ LẠI</button>
+								<button class="btn btn-primary">ĐĂNG KÝ</button>
+							</div>
+							<div class="auth-form_socials">
+								<a href="" class="auth-form_socials-facebook btn btn-size-s btn-with-icon">
+									<i class="auth-form_socials-icon fa-brands fa-square-facebook"></i>
+									<span class="auth-form_socials-title"> Kết nối với Facebook </span>
+								</a>
+
+								<a href="" class="auth-form_socials-google btn btn-size-s btn-with-icon">
+									<i class="auth-form_socials-icon fa-brands fa-google"></i>
+									<span class="auth-form_socials-title"> Kết nối với Google </span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
